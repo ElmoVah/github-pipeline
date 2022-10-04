@@ -1,4 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit"
+import { createSlice } from '@reduxjs/toolkit'
 import anecdoteService from '../services/anecdotes'
 
 const anecdoteSlice = createSlice({

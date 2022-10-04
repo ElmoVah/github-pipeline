@@ -1,5 +1,5 @@
-import { connect } from "react-redux";
-import { createAnecdote } from "../reducers/anecdoteReducer";
+import { connect } from 'react-redux'
+import { createAnecdote } from '../reducers/anecdoteReducer'
 
 const AnecdoteForm = (props) => {
 
@@ -25,5 +25,5 @@ const AnecdoteForm = (props) => {
 
 export default connect(
   null,
-  {createAnecdote}
+  { createAnecdote }
 )(AnecdoteForm)
