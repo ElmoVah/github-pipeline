@@ -19,11 +19,5 @@ server.get('/health', (req, res) => {
 })
 
 server.use(jsonServer.bodyParser)
-server.use((req, res, next) => {
-  if (req.method === 'POST') {
-    req.body.created = Date.now()
-  }
-  next()
-})
 
-server.use(app.use(express.static('build')))
+server.use(app.use(express.static('dist')))
