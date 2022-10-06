@@ -18,7 +18,7 @@ server.get('/health', (req, res) => {
   res.send('ok')
 })
 
-server.use(jsonsServer.bodyParser)
+server.use(jsonServer.bodyParser)
 server.use((req, res, next) => {
   if (req.method === 'POST') {
     req.body.created = Date.now()
