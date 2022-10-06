@@ -4,7 +4,7 @@ const baseUrl = '/api/anecdotes'
 
 const getAll = async () => {
   const response = await axios.get(baseUrl)
-  return response.data
+  return { type: 'GET_ALL', payload: response.data }
 }
 
 const createNew = async (content) => {
