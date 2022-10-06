@@ -31,5 +31,4 @@ jobs:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: "desolate-chamber-63709" 
           heroku_email: ${{secrets.HEROKU_API_EMAIL}}
-          healthcheck: "https://desolate-chamber-63709.herokuapp.com/health"
-          rollbackonhealthcheckfailed: true
+          
