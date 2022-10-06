@@ -1,7 +1,7 @@
 const express = require('express')
 const server = jsonServer.create()
 const router = jsonServer.router('')
-const middlewares = jsonsServer.defaults()
+const middlewares = jsonServer.defaults()
 const app = express()
 
 // Heroku dynamically sets a port
