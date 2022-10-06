@@ -6,7 +6,7 @@ const express = require('express')
 
 
 // Heroku dynamically sets a port
-const PORT = process.env.PORT || 5000
+const PORT = process.env.PORT || 3000
 
 server.use('/api', middlewares, router)
 
@@ -15,10 +15,14 @@ server.listen(PORT, () => {
   console.log('server started on port 5000')
 })
 
+server.use(jsonServer.bodyParser)
+
 server.get('/health', (req, res) => {
   res.send('ok')
 })
 
-server.use(jsonServer.bodyParser)
+server.use((req, res, next) => {
+  next()
+})
 
-server.use(app.use(express.static('dist')))
+server.use(express.static('build'))
