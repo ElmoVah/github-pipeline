@@ -2,6 +2,7 @@
   "name": "redux-anecdotes",
   "version": "0.1.0",
   "private": true,
+  "main": "src/index.js",
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.3",
     "@testing-library/user-event": "^14.1.1",
@@ -20,7 +21,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "server": "json-server -p3001 --watch db.json",
-    "eslint": "eslint './**/*.{js,jsx}'"
+    "eslint": "eslint './**/*.{js,jsx}'",
+    "start-prod": "node app.js"
   },
   "eslintConfig": {
     "extends": [
