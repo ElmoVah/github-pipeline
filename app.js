@@ -1,6 +1,6 @@
 const jsonServer = require('json-server')
 const server = jsonServer.create()
-const router = jsonServer.router('')
+const router = jsonServer.router('anecdotes.json')
 const middlewares = jsonServer.defaults()
 const express = require('express')
 
