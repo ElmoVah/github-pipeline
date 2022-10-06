@@ -4,13 +4,13 @@ const router = jsonServer.router('anecdotes.json')
 const middlewares = jsonServer.defaults()
 const express = require('express')
 
-// Heroku dynamically sets a port
+//Heroku dynamically sets a port
 const PORT = process.env.PORT || 3000
 
 server.use('/api', middlewares, router)
 
 server.listen(PORT, () => {
-  // eslint-disable-next-line no-console
+  //eslint-disable-next-line no-console
   console.log('server started on port 5000')
 })
 
